@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,129 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header>
             <nav class="header_nav">
-                <a href="#">Обо мне</a>
-                <a href="#">Работа</a>
-                <a href="#">Оборудование</a>
+                <a href="#about_me">Обо мне</a>
+                <a href="#work">Работа</a>
+                <a href="#hardware">Оборудование</a>
                 <a href="#">Увлечения</a>
                 <a href="#">Планы</a>
             </nav>
         </header>
         <div class="content">
-            <div class="content_about_me">
+            <div class="content_about_me" id="about_me">
                 <img src="resume_img.jpg" alt="Photo">
-                <p>Так как особых навыков в программировании <span> пока что</span> не имею, решил больше рассказать о себе, чтобы в дальнейшем пополнять анкету по мере обучения.</p>
+                <p>Так как особых навыков в программировании <span> пока что</span> не имею, решил больше рассказать о
+                    себе, чтобы в дальнейшем пополнять анкету по мере обучения.</p>
             </div>
-            <div class="content_work"></div>
-            <div class="content_hardware"></div>
+            <div class="content_work" id="work">
+                <h1>Места работы</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Работа</th>
+                            <th>Должность</th>
+                            <th>Годы работы</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dovile</td>
+                            <td>Официант</td>
+                            <td>2019 (май-июль)</td>
+                        </tr>
+                        <tr>
+                            <td>Читай-город</td>
+                            <td>Продавец-кассир</td>
+                            <td>2020</td>
+                        </tr>
+                        <tr>
+                            <td>DNS</td>
+                            <td>Универсальный работник</td>
+                            <td>2020-2021 (декабрь-февраль)</td>
+                        </tr>
+                        <tr>
+                            <td>Лента</td>
+                            <td>Продавец-логист</td>
+                            <td>2021 (июль-октябрь)</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"> <s> Проёбанные</s> Годы жизни без программирования <br> (учитывая обучение
+                                в колледже): </td>
+                            <td>2016-2022</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="content_hardware" id="hardware">
+                <!-- Максим, если ты будешь читать этот код, то знай, идея с этим разделом спизжена у тебя от начала и до конца -->
+                    <h1>Оборудование</h1>
+                <div class="content_hardware_list">
+                    <table>
+                        <tr>
+                            <th>
+                                Моё ведро с болтами
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Операционная система:</td>
+                            <td> Windows 10</td>
+                        </tr>
+                        <tr>
+                            <td>Материнская плата:</td>
+                            <td>H110M-S2H</td>
+                        </tr>
+                        <tr>
+                            <td>Видеокарта:</td>
+                            <td>Radeon RX 580 Series 4GB</td>
+                        </tr>
+                        <tr>
+                            <td>Процессор:</td>
+                            <td>Intel Core i3-6100 3.7GHz</td>
+                        </tr>
+                        <tr>
+                            <td>ОЗУ:</td>
+                            <td>DDR4 8GB</td>
+                        </tr>
+                        <tr>
+                            <th>Носители информации:</th>
+                        </tr>
+                        <tr>
+                            <td>HDD:</td>
+                            <td>
+                                <ol>
+                                    <li>ST500DM009-2DM14C (500Gb)</li>
+                                    <li>WD19EZEX-00BN5A0(1Tb)</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>SSD:</td>
+                            <td>KINGSTON SA400S37240G(250Gb)</td>
+                        </tr>
+                    </table>
+                    <img src="pc.png" alt="Компудахтер">
+                </div>
+            </div>
             <div class="content_hobby"></div>
             <div class="content_future_plans"></div>
         </div>
         <footer>
-            <p>discord</p>
+            <a href="" class="footer_discord"></a>
+            <a href="" class="footer_vk"></a>
+            <a href="" class="footer_tg"></a>
+            <a href="" class="footer_steam"></a>
+            <a href="" class="footer_git"></a>
+            <!-- <p>discord</p>
             <p>vk</p>
             <p>tg</p>
             <p>steam</p>
-            <p>github</p>
+            <p>github</p> -->
         </footer>
     </div>
 </body>

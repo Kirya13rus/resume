@@ -5,15 +5,17 @@
 }
 
 a:hover {
-    color: #3366cc
+    color: #3366cc;
 }
+
+footer a img:hover {}
 
 .wrapper {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100vw;
-    background-color:  #3366cc;
+    background-color: #3366cc;
 }
 
 header {
@@ -21,19 +23,20 @@ header {
     display: flex;
     background: #011449;
     width: 100%;
-    height: 100px;
+    height: 70px;
     font-size: 35px;
 }
 
-.content img {
-    width: 20%;
+.content_about_me img {
+    width: 300px;
     height: auto;
     border-radius: 70px;
+    padding: 10px;
 }
 
 a {
     text-decoration: none;
-    
+
 }
 
 .header_nav {
@@ -44,10 +47,14 @@ a {
 }
 
 .content {
-    margin: 130px 150px 30px 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 130px 0px 30px 0px;
+    width: 85%;
+    align-self: center;
 }
 
-.content div {
+/* .content div {
     border: 5px solid #003366;
     border-radius: 20px;
     padding: 20px;
@@ -57,12 +64,19 @@ a {
 
 .content div:last-child {
     margin-bottom: 0px;
-}
+} */
 
 .content_about_me {
+    border: 5px solid #003366;
+    border-radius: 20px;
+    padding: 20px;
+    background: #003366;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
+    text-align: center;
     font-size: 48px;
 }
 
@@ -72,4 +86,174 @@ a {
 
 .content_about_me span {
     text-decoration: underline;
+}
+
+.content_work {
+    border: 5px solid #003366;
+    border-radius: 20px;
+    padding: 20px;
+    background: #003366;
+    margin-bottom: 30px;
+}
+
+.content_work h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content_work table {
+    width: 100%;
+    font-size: 22px;
+    border-spacing: 30px 15px;
+}
+
+.content_hardware {
+    border: 5px solid #003366;
+    border-radius: 20px;
+    padding: 20px;
+    background: #003366;
+    margin-bottom: 30px;
+}
+
+.content_hardware_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content_hardware h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.content_hardware_list table {
+    width: auto;
+    font-size: 22px;
+    border-spacing: 30px 15px;
+}
+
+.content_hardware img {
+    width: auto;
+    height: auto;
+}
+
+.content_hobby {
+    border: 5px solid #003366;
+    border-radius: 20px;
+    padding: 20px;
+    background: #003366;
+    margin-bottom: 30px;
+}
+
+.content_future_plans {
+    border: 5px solid #003366;
+    border-radius: 20px;
+    padding: 20px;
+    background: #003366;
+}
+
+table td,
+th {
+    border-bottom: 1px solid white;
+}
+
+footer {
+    display: flex;
+    background: #011449;
+    width: 100%;
+    height: 70px;
+    font-size: 35px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_discord {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: url(/img_footer/discord.png);
+    background-size: cover;
+}
+
+.footer_discord:hover {
+    background: url(/replacement/discord.png);
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+}
+
+.footer_vk {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: url(/img_footer/vk.png);
+    background-size: cover;
+}
+
+.footer_vk:hover {
+    background: url(/replacement/vk.png);
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+}
+
+.footer_tg {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: url(/img_footer/tg.png);
+    background-size: cover;
+}
+
+.footer_tg:hover {
+    background: url(/replacement/tg.png);
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+}
+
+.footer_steam {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: url(/img_footer/steam.png);
+    background-size: cover;
+}
+
+.footer_steam:hover {
+    background: url(/replacement/steam.png);
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+}
+
+.footer_git {
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: url(/img_footer/git.png);
+    background-size: cover;
+}
+
+.footer_git:hover {
+    background: url(/replacement/git.png);
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+}
+
+footer a img {
+    height: 40px;
+    width: auto;
+}
+
+th {
+    font-size: 30px;
 }
